@@ -38,6 +38,8 @@ print(f"The oldest cat is {oldest_cat} and she is {highest_age} years old.")
 
 # WAY 2
 
+
+
 # 2) Create a function that finds the oldest cat
 
 def get_oldest(*args):
