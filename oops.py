@@ -1,3 +1,8 @@
+# Udemy: Python Developer in 2021: Zero to Mastery
+
+# Lecture 116
+
+
 class PlayerCharacter:
     def __init__(self, name, age=10):
         self.name = name
@@ -14,3 +19,5 @@ print(player2.name,  player2.run(),  player2.age)
 player2.attack = 150
 print(player2.attack)
 print(player1.attack) # throws error since attack attribute defined only for player 2
+
+
