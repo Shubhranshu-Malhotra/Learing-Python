@@ -2,7 +2,7 @@ class PlayerCharacter:
     membership = True  # This is a class attribute
 
     def __init__(self, name, age=10):
-        
+
         if (self.membership == True):  # 2 ways to access class attribute - way 1 - "self.membership"
             self.name = name # This is an object attribute, cant access by class name "PlayerCharacter.name"
             self.age = age  # object attribute
@@ -12,7 +12,7 @@ class PlayerCharacter:
 
     def run(self):
         print('word1')
-        return 'word2'
+        return self
 
     def shout(self):
         print(f"your name is {self.name}, You are a member: {PlayerCharacter.membership}")

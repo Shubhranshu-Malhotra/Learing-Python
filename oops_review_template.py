@@ -17,3 +17,5 @@ class NameOfClass():
     def stc_method(param1, param2):
         #code
         pass
+
+   
