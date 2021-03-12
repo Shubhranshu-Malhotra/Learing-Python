@@ -12,6 +12,11 @@ cat1 = Cat('tin', 1)
 cat2 = Cat('pin', 0.5)
 cat3 = Cat('lin', 2)
 
+
+
+# WAY 1
+
+
 # 2) Create a function that finds the oldest cat
 
 def get_oldest(cats):
@@ -28,3 +33,19 @@ def get_oldest(cats):
 
 oldest_cat, highest_age = get_oldest([cat1, cat2, cat3])
 print(f"The oldest cat is {oldest_cat} and she is {highest_age} years old.")
+
+
+
+# WAY 2
+
+# 2) Create a function that finds the oldest cat
+
+def get_oldest(*args):
+    # return max(args) # if taking just the ages as input
+    return max( e.age for e in args)
+
+
+# 3) Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
+
+highest_age = get_oldest(cat1, cat2, cat3)
+print(f"The oldest cat is {highest_age} years old.")
