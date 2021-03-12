@@ -7,21 +7,19 @@ class PlayerCharacter:
     membership = True  # This is a class attribute
 
     def __init__(self, name, age=10):
-        if (self.membership == True):  # 2 ways to access class attribute - way 1 - "self.membership"
-            # This is an object attribute, cant access by class name "PlayerCharacter.name"
-            self.name = name
+        if (self.membership == True):   # 2 ways to access class attribute - way 1 - "self.membership"
+            self.name = name  # This is an object attribute, cant access by class name "PlayerCharacter.name"
             self.age = age  # object attribute
-        # Way 2 - "PlayerCharacter.membership"  (self not required)
-        elif (PlayerCharacter.membership == False):
+        
+        elif (PlayerCharacter.membership == False):   # Way 2 - "PlayerCharacter.membership"  (self not required)
             print("Please get a membership")
 
     def run(self):
         print('run')
-        return 'done'
+        return self
 
     def shout(self):
-        print(
-            f"your name is {self.name}, You are a member: {PlayerCharacter.membership}")
+        print(f"your name is {self.name}, You are a member: {PlayerCharacter.membership}")
 
     @classmethod # Decorator 1
     def adding_things(cls, num1, num2):
@@ -50,3 +48,4 @@ print("name and age using adding_things: ",player3.name, player3.age)
 #using @staticmethod
 print("adding_things2 is a static method it cannot instantiate a class object (doesn't have class as parameter)")
 print("adding_things2 just performs addition in two numbers: ", PlayerCharacter.adding_things2(4,3))
+

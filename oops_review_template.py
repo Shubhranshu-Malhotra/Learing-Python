@@ -6,11 +6,14 @@ class NameOfClass():
     
     def method():
         #code
+        pass
     
     @classmethod
     def cls_method(cls, param1, param2):
         #code
+        pass
     
     @staticmethod
     def stc_method(param1, param2):
         #code
+        pass
