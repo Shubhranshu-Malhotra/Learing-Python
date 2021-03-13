@@ -36,3 +36,17 @@ print("Trial 2: ", player2.name,  player2.run(),  player2.age)
 player4 = PlayerCharacter('Timmy', 20)
 
 print(player4.run().run().run())
+
+
+
+
+class Toy():
+    def __init__ (self, color, age):
+        self.color = color
+        self.age = age
+    
+    def __del__(self):
+        print('deleted!')
+
+action_figure = Toy('red', 0)
+
