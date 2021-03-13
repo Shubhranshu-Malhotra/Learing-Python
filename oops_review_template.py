@@ -4,7 +4,7 @@ class NameOfClass():
         self.param1 = param1
         self.param2 = param2
     
-    def method():
+    def method(self): # passing `self` is necessary
         #code
         pass
     
