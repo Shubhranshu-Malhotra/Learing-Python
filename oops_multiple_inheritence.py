@@ -44,3 +44,7 @@ hb1.check_arrows()
 print(hb1.name)
 hb1.attack()
 hb1.sign_in()
+
+print(HyBorg.mro()) # to see method resolution order
+# mro shows the order in which classes will be checked
+
