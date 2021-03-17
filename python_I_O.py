@@ -13,3 +13,7 @@ print(test.readline())
 test.seek(0)
 print(test.readlines())
 test.close()
+
+with open('test.txt') as my_file: # no need to close
+    print('using with:')
+    print(my_file.read())
