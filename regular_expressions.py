@@ -26,3 +26,9 @@ print(x.group(2))
 
 pattern4 = re.compile(r'^Hi')
 print(pattern4.search(string))
+
+# Email checker
+email_pattern = re.compile(r"^[a-zA-Z0-Z._]+@[a-zA-Z-]+\.[a-zA-Z]+")
+email = 's@gmail.com'
+
+print(email_pattern.search(email))
